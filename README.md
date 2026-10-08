@@ -23,8 +23,8 @@ Analytical components:
 | 1 | Preprocessing: QC, trimming, alignment, methylation calling | [`PrePro/`](PrePro/) |
 | 2 | Genome-wide differentially methylated loci and regions (DMLs / DMRs) | [`DMA/`](DMA/) |
 | 3 | Genomic distribution, CpG context and functional enrichment of DMLs/DMRs | [`DMA/`](DMA/) |
-| 4 | Tissue-of-origin deconvolution (reference-based and reference-free) | [`Deconvolution/`](Deconvolution/) |
-| 5 | Statistical analysis of clinical covariates and group comparisons | [`statistics/`](statistics/) |
+| 4 | Tissue-of-origin deconvolution (reference-base) | [`Deconvolution/`](Deconvolution/) |
+
 
 > **Data availability.** No sequencing data or clinical metadata are stored in this
 > repository. Raw EM-seq data contain identifiable patient information and are
@@ -38,10 +38,9 @@ Analytical components:
 DMA_ADvsCT/
 ├── PrePro/               # Preprocessing with nf-core/methylseq (FastQC, Bismark, Trim Galore, MultiQC)
 ├── DMA/                  # Differential Methylation Analysis (BSseq, DSS)
-├── Deconvolution/        # Tissue-of-origin estimation (UXM)
-├── pData/                # Clinical and phenotypic metadata + exploratory statistics
-├── references/           # Genome reference files (GRCh38, SNPs, annotations)
-├── Suplementary_data.xlsx  # Supplementary tables summarizing key results (DMLs, DMRs, cell-type composition)
+    |──Results            # Figures
+    |──Script             # DSS_analysis, Functional_Enrichment, Genomic_distribution and Deconvolution
+    |──README.md          # Analysis documentation
 └── README.md             # Main project documentation
 ```
 
