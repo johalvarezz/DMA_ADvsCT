@@ -42,7 +42,7 @@ Performed using the **DSS** package with consistent parameters for both comparis
 ```r
 dmr_params = list(
   delta = 0.1,          # Minimum methylation difference
-  p.threshold = 1e-5,   # Significance threshold
+  p.threshold = 0.05,   # Significance threshold
   minlen = 50,          # Minimum DMR length (bp)
   minCG = 3,            # Minimum CpGs per DMR
   dis.merge = 100,      # Max distance to merge nearby DMRs
