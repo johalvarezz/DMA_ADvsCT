@@ -1,0 +1,6 @@
+input: './samplesheet.csv'
+outdir: '../PrePro/'
+genome: 'GRCh38'
+aligner: 'bismark'
+em_seq: 'true'
+c: './hpc.config' 
