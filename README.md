@@ -44,14 +44,6 @@ DMA_ADvsCT/
 └── README.md             # Main project documentation
 ```
 
-- `bismark/`: Contains BAM files aligned with Bismark and methylation extraction outputs.
-- `fastqc/`: Contains FastQC quality control reports for raw and trimmed reads.
-- `multiqc_data/`: Raw data used to generate the MultiQC report.
-- `multiqc_report.html`: Summary report aggregating metrics from all steps.
-- `pipeline_info/`: Metadata about the pipeline run, including software versions and logs.
-- `trimgalore/`: Output of adapter and quality trimming performed by Trim Galore.
----
-
 ## Installation & dependencies
 
 ### 1. Conda environment
@@ -71,9 +63,6 @@ mamba create -n tfm_AD -c bioconda -c conda-forge -c defaults \
 samtools picard  r-ggplot2 r-tidyverse python nextflow nf-core singularity
 conda activate tfm_AD
 ```
-
-The environment file pins every R/Bioconductor and Python dependency used in this
-project, including `BSseq`, `DSS`, `ChIPseeker`, `annotatr`.
 Installing Bioconductor packages through `install.packages()` will fail —
 they are resolved from the `bioconda` channel, or inside R with `BiocManager`:
 **R Libraries**:
@@ -147,14 +136,6 @@ After rigorous quality control (SNP exclusion, coverage filtering, the following
 
 Functional enrichment (GO, KEGG) highlighted neuronal and AD-related pathways. Scripts and outputs are organized in the [`DMA/`](DMA) folder and include annotated DMLs/DMRs, PCA, and enrichment summaries.
 
-## 🧬 Deconv
-
-### Deconvolution
-
-```bash
-cd Deconvolution/
-```
----
 
 ## Reproducibility notes
 The scripts are included for informational purposes to document the analysis performed; they do not constitute an executable pipeline.
