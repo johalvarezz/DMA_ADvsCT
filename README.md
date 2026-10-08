@@ -28,7 +28,7 @@ Analytical components:
 
 > **Data availability.** No sequencing data or clinical metadata are stored in this
 > repository. Raw EM-seq data contain identifiable patient information and are
-> available only under a data access agreement. See [`data/README.md`](data/README.md).
+> available only under a data access agreement.
 
 ---
 
