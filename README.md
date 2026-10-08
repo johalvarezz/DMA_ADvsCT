@@ -158,9 +158,4 @@ cd Deconvolution/
 ---
 
 ## Reproducibility notes
-
-- No absolute paths appear inside the scripts. All paths and analysis parameters are
-  read from `config.yaml` (see `config.example.yaml`), so the pipeline runs unchanged
-  on another machine.
-- Scripts are numbered by execution order within each module.
-- `sessionInfo()` output for every R analysis is written to `results/tables/`.
+The scripts are included for informational purposes to document the analysis performed; they do not constitute an executable pipeline.
