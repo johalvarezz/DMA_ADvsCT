@@ -15,7 +15,7 @@ bsseq:
 
 dss:
   smoothing: true
-  smoothing_span: 500
+  smoothing_span: 200
   dml_pvalue: 0.001
   dmr_pvalue: 0.01
   dmr_min_cpgs: 5
