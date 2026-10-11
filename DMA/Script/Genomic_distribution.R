@@ -31,7 +31,7 @@ anno_df_tss <- as.data.frame(peakAnno_tss) #
 
 peakAnno_dmr_all <- annotatePeak(
   gr_dmr,
-  tssRegion = c(-3000,3000),
+  tssRegion = c(-2000,500),
   TxDb = txdb,
   level = "gene",
   assignGenomicAnnotation = TRUE,
